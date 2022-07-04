@@ -38,7 +38,7 @@ function HtmlAlmanac(props) {
 
             <div className={styles.accordion}>
                 {data.map((item, i) => (
-                    <div className={styles.item}>
+                    <div className={selected === i ? [styles.item_show] : [styles.item]}>
                         <div className={styles.title} onClick={() => toggle(i)}>
                             <h2>{item.question}</h2>
                             <span>{selected === i ? "-" : "+"}</span>

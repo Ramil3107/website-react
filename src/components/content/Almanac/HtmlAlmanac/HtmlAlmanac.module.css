@@ -9,6 +9,12 @@
     padding: 10px 20px;
 }
 
+.item_show {
+    background-color: #bdffa9;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+
 .title {
     color: #85662b;
     display: flex;
