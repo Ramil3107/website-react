@@ -1,0 +1,21 @@
+.accordion {
+    width: 500px;
+}
+
+
+.item {
+background-color: coral;
+margin-bottom: 5px;
+padding: 10px 20px;
+}
+
+.title{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    color: white;
+}

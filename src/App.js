@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/content/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Login from './components/content/Login/Login';
+import HtmlAlmanac from './components/content/Almanac/HtmlAlmanac/HtmlAlmanac';
 
 
 
@@ -19,11 +20,19 @@ function App() {
 
         <div className='content'>
           <Routes>
+
+            {/* Navbar Routes */}
             <Route path="website-react/" element={<Home />} />
             <Route path="/almanac" element={<Almanac />} />
             <Route path="/todo" element={<ToDo />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/login" element={<Login />} />
+
+            {/* Almanac Routes */}
+            <Route path="almanac-html" element={<HtmlAlmanac />} />
+
+
+
           </Routes>
         </div>
 
