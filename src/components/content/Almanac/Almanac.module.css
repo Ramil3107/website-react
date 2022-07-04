@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 150px;
+    width: 40%;
+    background-color: aqua;
+    border: 3px solid blue;
+}
+
+.item:hover {
+    background-color: burlywood;
+    color: white;
+}
+
+/* .item a{
+    text-decoration: none;
+} */

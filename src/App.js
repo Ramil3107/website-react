@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import AboutMe from './components/content/AboutMe/AboutMe';
+import Almanac from './components/content/Almanac/Almanac';
 import Contacts from './components/content/Contacts/Contacts';
 import ToDo from './components/content/ToDo/ToDo';
 import Footer from './components/Footer/Footer';
@@ -20,7 +20,7 @@ function App() {
         <div className='content'>
           <Routes>
             <Route path="website-react/" element={<Home />} />
-            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/almanac" element={<Almanac />} />
             <Route path="/todo" element={<ToDo />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/login" element={<Login />} />

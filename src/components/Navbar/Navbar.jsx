@@ -12,7 +12,7 @@ function Navbar(props) {
             </div>
 
             <div className={styles.item}>
-                <NavLink to="/aboutme" className={({ isActive }) => (isActive ? [styles.active] : [])}>About Me</NavLink>
+                <NavLink to="/almanac" className={({ isActive }) => (isActive ? [styles.active] : [])}>Almanac</NavLink>
             </div>
 
             <div className={styles.item}>
