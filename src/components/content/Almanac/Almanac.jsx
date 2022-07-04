@@ -4,6 +4,7 @@ import styles from "./Almanac.module.css"
 
 function Almanac(props) {
     return (
+
         <div className={styles.wrapper}>
 
             <div className={styles.item} >
