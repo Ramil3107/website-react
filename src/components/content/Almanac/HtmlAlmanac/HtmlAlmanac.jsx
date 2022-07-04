@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./HtmlAlmanac.module.css"
 
 
@@ -17,19 +17,33 @@ const data = [{
 ]
 
 
+
+
+
+
 function HtmlAlmanac(props) {
+
+    const [selected, setSelected] = useState(null)
+
+    const toggle = (i) => {
+        if (selected == i) {
+            return setSelected(null)
+        }
+        setSelected(i)
+    }
+
     return (
 
         <div className={styles.wrapper}>
 
             <div className={styles.accordion}>
-                {data.map((item) => (
+                {data.map((item, i) => (
                     <div className={styles.item}>
-                        <div className={styles.title}>
+                        <div className={styles.title} onClick={() => toggle(i)}>
                             <h2>{item.question}</h2>
-                            <span>+</span>
+                            <span>{selected === i ? "-" : "+"}</span>
                         </div>
-                        <div className={styles.content}>
+                        <div className={selected === i ? [styles.content_show] : [styles.content]}>
                             {item.answer}
                         </div>
                     </div>
