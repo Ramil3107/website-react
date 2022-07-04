@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+    max-width: 800px;    
+}
+
+.wrapper h1 {
+    text-align: center;
+}
+
+.wrapper p {
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+
+
+.wrapper p:first-letter {
+    color:rgb(21, 69, 153);
+    font-weight: bold;
+    font-size: 40px;
+    float: left;
+    line-height: 10px;
+    padding-right: 5px;
+}
+
+

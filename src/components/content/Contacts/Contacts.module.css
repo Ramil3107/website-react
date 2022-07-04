@@ -1,0 +1,30 @@
+.wrapper {
+    border: 3px solid;
+    border-color: blue;
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align:justify;
+}
+
+.wrapper p {
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+.wrapper hr {
+    max-width: 300px;
+}
+
+.wrapper p:first-letter {
+    color:rgb(21, 69, 153);
+    font-weight: bold;
+    font-size: 40px;
+    float: left;
+    line-height: 10px;
+    padding-right: 5px;
+}

@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid wheat;
+    padding-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+.taskinput {
+    margin-top: 15px;
+    background-color: wheat;
+    border-radius: 10px;
+    border: none;
+    max-width: 60%;
+    height: 40px;
+    align-self: center;
+    text-align: center;
+}
+
+.taskinput::placeholder {
+    font-weight:lighter;
+}
+
+
