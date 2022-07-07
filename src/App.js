@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Almanac from './components/content/Almanac/Almanac';
 import Contacts from './components/content/Contacts/Contacts';
@@ -13,33 +13,30 @@ import HtmlAlmanac from './components/content/Almanac/HtmlAlmanac/HtmlAlmanac';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='wrapper'>
 
-        <Navbar />
+    <div className='wrapper'>
 
-        <div className='content'>
-          <Routes>
+      <Navbar />
 
-            {/* Navbar Routes */}
-            <Route path="website-react/" element={<Home />} />
-            <Route path="/almanac" element={<Almanac />} />
-            <Route path="/todo" element={<ToDo />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/login" element={<Login />} />
+      <div className='content'>
+        <Routes>
 
-            {/* Almanac Routes */}
-            <Route path="almanac-html" element={<HtmlAlmanac />} />
+          {/* Navbar Routes */}
+          <Route path="website-react/" element={<Home />} />
+          <Route path="/almanac" element={<Almanac />} />
+          <Route path="/todo" element={<ToDo />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/login" element={<Login />} />
 
-
-
-          </Routes>
-        </div>
-
-        <Footer />
-
+          {/* Almanac Routes */}
+          <Route path="almanac-html" element={<HtmlAlmanac />} />
+          
+        </Routes>
       </div>
-    </BrowserRouter>
+
+      <Footer />
+
+    </div>
   );
 }
 
