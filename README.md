@@ -2,13 +2,9 @@
 
 Info about my first react app
 
-### About Me
+### Almanac
 
-Few words about myself
-
-### About Me
-
-Few words about myself
+Main theory
 
 ### To Do List
 
