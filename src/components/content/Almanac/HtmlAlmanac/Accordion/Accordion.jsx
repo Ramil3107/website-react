@@ -20,8 +20,8 @@ function Accordion(props) {
     }
     ])
     
-    const [question, setQstn] = useState('')
-    const [answer, setAnswr] = useState('')
+    const [question, setQuestion] = useState('')
+    const [answer, setAnswer] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault();
         const faqs = {question,answer}
@@ -45,10 +45,10 @@ function Accordion(props) {
 
             <form onSubmit={handleSubmit}>
                 <label>Question</label>
-                <input type="text" required value={question} onChange={(e) => setQstn(e.target.value)}/>
+                <input type="text" required value={question} onChange={(e) => setQuestion(e.target.value)}/>
 
                 <label>Answer</label>
-                <input type="text" required value={answer} onChange={(e) => setAnswr(e.target.value)}/>
+                <input type="text" required value={answer} onChange={(e) => setAnswer(e.target.value)}/>
 
                 <button>Add FAQ</button>
             </form>
