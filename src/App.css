@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  background-color: #011127;
+  color: #f3f6fa;
 }
 
 
@@ -15,6 +17,6 @@
   justify-content: center;
   width: 100%;
   min-height: 83vh;
-  margin: 1rem;
+  margin: 4rem;
 }
 

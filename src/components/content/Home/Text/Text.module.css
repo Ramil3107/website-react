@@ -25,7 +25,7 @@
 
 
 .wrapper p:first-letter {
-    color:rgb(21, 69, 153);
+    color:#f3f6fa;
     font-weight: bold;
     font-size: 40px;
     float: left;
