@@ -44,6 +44,7 @@ function Navbar(props) {
                     {/* <Button component={Link} to="/login" variant="text" color="inherit">Log In</Button> */}
 
                     <Avatar
+                        sx={{ bgcolor: "purple", cursor:"pointer" }}
                         id="avatar"
                         aria-controls={open ? 'menu' : undefined}
                         aria-haspopup="true"
