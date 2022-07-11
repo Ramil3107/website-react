@@ -18,7 +18,7 @@ function Navbar(props) {
     return (
         <div className={styles.wrapper}>
 
-            <AppBar position="absolute" color="default">
+            <AppBar position="fixed" color="default">
                 <Toolbar sx={{ display: "flex", justifyContent: "space-between", }}>
 
                     <Typography

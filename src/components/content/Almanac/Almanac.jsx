@@ -1,27 +1,40 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Almanac.module.css"
+import cardsInfo from "../../../data/cardsInfo";
+
+
+
 
 function Almanac(props) {
+    
     return (
 
         <div className={styles.wrapper}>
-
-            <div className={styles.item} >
-                <NavLink to="/almanac-html">HTML</NavLink>
-            </div>
-
-            <div className={styles.item}>
-                <NavLink to="/almanac-css">CSS</NavLink>
-            </div>
-
-            <div className={styles.item}>
-                <NavLink to="/almanac-js">JavaScript</NavLink>
-            </div>
-
-            <div className={styles.item}>
-                <NavLink to="/almanac-react">React</NavLink>
-            </div>
+            
+            {cardsInfo.map(card => {
+                return (
+                    <Card component={Link} to={card.path} sx={{ maxWidth: 450, textDecoration: "none", margin: "1rem" }}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={card.image}
+                        alt={card.alt}
+                    />
+                    <CardContent >
+                        <Typography textAlign="center" gutterBottom variant="h5" component="div">
+                            {card.title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                           {card.description}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+                )
+            })}
 
         </div>
     )
