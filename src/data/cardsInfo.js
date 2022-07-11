@@ -16,7 +16,7 @@ let cardsInfo = [
     {
         title: "Java Script",
         description: "JavaScript - мультипарадигменный язык программирования. Является реализацией спецификации ECMAScript.",
-        image: "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.jpg",
+        image: "https://cafearz.com/blog/wp-content/uploads/2020/08/jsjsjs.png",
         alt: "java script",
         path: "/almanac-js"
     },
