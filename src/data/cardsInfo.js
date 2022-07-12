@@ -22,7 +22,7 @@ let cardsInfo = [
     },
     {
         title: "React",
-        description: "React — JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов.",
+        description: "React - JavaScript-библиотека с открытым исходным кодом для разработки пользовательских интерфейсов.",
         image: "https://www.alastyr.com/blog/wp-content/uploads/2021/09/react-nedir.png",
         alt: "react",
         path: "/almanac-react"

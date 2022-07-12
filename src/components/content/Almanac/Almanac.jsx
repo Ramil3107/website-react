@@ -15,7 +15,7 @@ function Almanac(props) {
             
             {cardsInfo.map(card => {
                 return (
-                    <Card component={Link} to={card.path} sx={{ width:"35%", textDecoration: "none", margin: "1rem" }}>
+                    <Card component={Link} to={card.path} sx={{ width:"45%",maxWidth:"500px",minWidth:"300px", textDecoration: "none", margin: "1rem" }}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
