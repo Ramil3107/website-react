@@ -16,9 +16,8 @@ function Navbar(props) {
     };
 
     return (
-        <div className={styles.wrapper}>
-
-            <AppBar position="fixed" color="default">
+        
+            <AppBar position="static" color="default" sx={{}}>
                 <Toolbar sx={{ display: "flex", justifyContent: "space-between", }}>
 
                     <Typography
@@ -73,9 +72,8 @@ function Navbar(props) {
                         <MenuItem component={Link} to="/login" onClick={handleClose}>Sign In</MenuItem>
                     </Menu>
                 </Toolbar>
-            </AppBar>
 
-            {/* <div className={styles.item}>
+                 {/* <div className={styles.item}>
                 <NavLink to="/website-react" className={({ isActive }) => (isActive ? [styles.active] : [])}>Home</NavLink>
             </div>
 
@@ -94,8 +92,11 @@ function Navbar(props) {
             <div className={styles.login}>
                 <NavLink to="/login" className={({ isActive }) => (isActive ? [styles.active] : [])}>Login</NavLink>
             </div> */}
+            </AppBar>
 
-        </div>
+           
+
+        
     )
 }
 

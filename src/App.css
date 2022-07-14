@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -12,11 +12,11 @@
 .content {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 110%;
   min-height: 83vh;
   margin-top: 4rem;
-}
+} */
 

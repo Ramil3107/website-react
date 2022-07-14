@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia, Container, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Almanac.module.css"
@@ -11,11 +11,11 @@ function Almanac(props) {
     
     return (
 
-        <div className={styles.wrapper}>
+        <Container sx={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
             
             {cardsInfo.map(card => {
                 return (
-                    <Card component={Link} to={card.path} sx={{ width:"45%",maxWidth:"500px",minWidth:"300px", textDecoration: "none", margin: "1rem" }}>
+                    <Card component={Link} to={card.path} sx={{ width:"35%",minWidth:"300px",textDecoration: "none", margin: "1rem" }}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
@@ -36,7 +36,7 @@ function Almanac(props) {
                 )
             })}
 
-        </div>
+        </Container>
     )
 }
 
